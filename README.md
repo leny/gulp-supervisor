@@ -114,6 +114,10 @@ gulp.task( "supervisor-all", function() {
 } );
 ```
 
+## Release History
+
+* **0.1.0**: Initial release (*28/02/14*)
+
 ## TODO
 
 Write tests :)

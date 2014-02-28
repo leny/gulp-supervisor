@@ -11,14 +11,11 @@ gulp.task( "compile", function () {
 } );
 
 gulp.task( "supervisor-simple", function() {
-    supervisor( {
-        script: "test/fixture/server.js"
-    } );
+    supervisor( "test/fixture/server.js" );
 } );
 
 gulp.task( "supervisor-all", function() {
-    supervisor( {
-        script: "test/fixture/server.js",
+    supervisor( "test/fixture/server.js", {
         args: [],
         watch: [ "test" ],
         ignore: [ "tasks" ],

@@ -24,8 +24,11 @@ kindOf = function(value) {
   return kindsOf[kindsOf.toString.call(value)] || "object";
 };
 
-module.exports = function(oOptions) {
+module.exports = function(sScript, oOptions) {
   var aOptions;
+  if (oOptions == null) {
+    oOptions = {};
+  }
   aOptions = [];
   if (kindOf(oOptions.watch) === "array") {
     aOptions.push("--watch", oOptions.watch.join(","));
@@ -60,7 +63,7 @@ module.exports = function(oOptions) {
   if (oOptions.quiet === true) {
     aOptions.push("--quiet");
   }
-  aOptions.push("--", oOptions.script);
+  aOptions.push("--", sScript);
   if (kindOf(oOptions.args) === "array") {
     aOptions.push.apply(aOptions, oOptions.args);
   }

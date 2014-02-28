@@ -19,7 +19,7 @@ kindOf = ( value ) ->
     return String value unless value?
     kindsOf[ kindsOf.toString.call( value ) ] or "object"
 
-module.exports = ( oOptions ) ->
+module.exports = ( sScript, oOptions = {} ) ->
     aOptions = []
 
     aOptions.push "--watch", oOptions.watch.join "," if kindOf( oOptions.watch ) is "array"
@@ -37,7 +37,7 @@ module.exports = ( oOptions ) ->
     aOptions.push "--force-watch" if oOptions.forceWatch is yes
     aOptions.push "--quiet" if oOptions.quiet is yes
 
-    aOptions.push "--", oOptions.script
+    aOptions.push "--", sScript
     aOptions.push oOptions.args... if kindOf( oOptions.args ) is "array"
 
     supervisor.run aOptions

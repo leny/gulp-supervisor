@@ -45,7 +45,7 @@ module.exports = function(sScript, oOptions) {
   if (kindOf(oOptions.pollInterval) === "number") {
     aOptions.push("--poll-interval", "" + oOptions.pollInterval);
   }
-  if (kindOf(oOptions.noRestartOn) === "string" && (oOptions.noRestartOn === "error" && oOptions.noRestartOn === "exit")) {
+  if (kindOf(oOptions.noRestartOn) === "string" && (oOptions.noRestartOn === "error" || oOptions.noRestartOn === "exit")) {
     aOptions.push("--no-restart-on", oOptions.noRestartOn);
   }
   if (oOptions.debug === true) {

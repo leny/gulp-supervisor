@@ -1,6 +1,6 @@
 {
   "name": "gulp-supervisor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run supervisor as a gulp task for easy integration with the rest of your workflow.",
   "keywords": [
     "gulpfriendly",

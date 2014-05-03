@@ -39,6 +39,6 @@
     "express": "~4.1"
   },
   "dependencies": {
-    "supervisor": "~0.5"
+    "supervisor": "~0.6"
   }
 }

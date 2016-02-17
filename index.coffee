@@ -34,6 +34,7 @@ module.exports = ( sScript, oOptions = {} ) ->
     aOptions.push "--debug" if oOptions.debug is yes
     aOptions.push "--debug-brk" if oOptions.debugBrk is yes
     aOptions.push "--harmony" if oOptions.harmony is yes
+    aOptions.push "--harmony_default_parameters" if oOptions.harmony_default_parameters is yes
     aOptions.push "--force-watch" if oOptions.forceWatch is yes
     aOptions.push "--quiet" if oOptions.quiet is yes
 
@@ -41,4 +42,3 @@ module.exports = ( sScript, oOptions = {} ) ->
     aOptions.push oOptions.args... if kindOf( oOptions.args ) is "array"
 
     supervisor.run aOptions
-

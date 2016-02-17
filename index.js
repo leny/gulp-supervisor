@@ -57,6 +57,9 @@ module.exports = function(sScript, oOptions) {
   if (oOptions.harmony === true) {
     aOptions.push("--harmony");
   }
+  if (oOptions.harmony_default_parameters === true) {
+    aOptions.push("--harmony_default_parameters");
+  }
   if (oOptions.forceWatch === true) {
     aOptions.push("--force-watch");
   }

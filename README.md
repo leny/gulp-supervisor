@@ -1,6 +1,6 @@
 # gulp-supervisor
 
-![NPM version](http://img.shields.io/npm/v/gulp-supervisor.svg) ![Dependency Status](https://david-dm.org/leny/gulp-supervisor.svg) ![Downloads counter](http://img.shields.io/npm/dm/gulp-supervisor.svg)
+![NPM version](http://img.shields.io/npm/v/gulp-supervisor.svg) ![Dependency Status](https://david-dm.org/leny/gulp-supervisor.svg) ![Downloads counter](http://img.shields.io/npm/dm/gulp-supervisor.svg) [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 > Run [supervisor](https://github.com/isaacs/node-supervisor) as a gulp task for easy configuration and integration with the rest of your workflow.
 
